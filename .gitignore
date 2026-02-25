@@ -53,3 +53,89 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+
+############################################
+# OS / Editor
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+.vscode/
+.idea/
+
+############################################
+# Keil uVision / MDK-ARM
+############################################
+# Output folders
+Objects/
+Listings/
+Debug/
+Release/
+RTE/
+MDK-ARM/
+Keil/
+
+# Build artifacts
+*.axf
+*.elf
+*.out
+*.hex
+*.bin
+*.map
+*.lst
+*.o
+*.d
+*.crf
+*.i
+*.sbr
+*.pbi
+*.pbd
+*.dep
+*.lnp
+*.iex
+*.htm
+*.m51
+*.sym
+
+# uVision user/session files (machine specific)
+*.uvoptx
+*.uvopt
+*.uvguix
+*.uvgui
+*.uvmgr
+*.uvmpw
+*.uvprojx.user
+*.uvproj.user
+*.uvproj.user.*
+
+# Keil browse / database
+*.bsc
+*.bd
+*.bck
+*.dbgconf
+*.scvd
+
+############################################
+# CubeMX (optional but recommended)
+############################################
+# CubeMX generates these; keep .ioc, ignore derived/temporary
+*.mxproject
+.stm32cubeide/
+.metadata/
+*.launch
+
+# If you use CubeMX to generate code in-place, DO NOT ignore these:
+# Core/, Drivers/, Middlewares/, USB_DEVICE/, etc.
+# (keep them tracked because they are your project sources)
+
+############################################
+# CMSIS packs/cache (if present)
+############################################
+*.pack
+.packs/
+Pack/
