@@ -24,7 +24,7 @@ int ClockInit(void)
 		if(RCC->CR & (1<<RCC_CR_HSERDY_Pos))
 			break;
 		
-		if(StartUpCounetr > 0x1000)
+		if(StartUpCounetr > 0x1000) 
 		{
 			RCC->CR &= ~(1<<RCC_CR_HSEON_Pos);
 			return 1;
@@ -35,7 +35,7 @@ int ClockInit(void)
 	RCC->PLLCFGR |= (1<<RCC_PLLCFGR_PLLSRC_Pos); // Задание HSE в качестве источника
 	RCC->PLLCFGR &= ~(0x3F<<RCC_PLLCFGR_PLLM_Pos); // Сброс M
 	RCC->PLLCFGR |= (12<<RCC_PLLCFGR_PLLM_Pos); // M = 12
-	RCC->PLLCFGR |= (0x1FF<<RCC_PLLCFGR_PLLN_Pos); // Сброс N
+	RCC->PLLCFGR &= ~(0x1FF<<RCC_PLLCFGR_PLLN_Pos); // Сброс N
 	RCC->PLLCFGR |= (96<<RCC_PLLCFGR_PLLN_Pos); // N = 96
 	RCC->PLLCFGR &= ~(3<<RCC_PLLCFGR_PLLP_Pos); // P = 2
 	
@@ -70,6 +70,6 @@ int ClockInit(void)
   }
 	
 	// Отключаем HSI
-	 RCC->CR &= ~(1<<RCC_CR_HSION_Pos);
+	RCC->CR &= ~(1<<RCC_CR_HSION_Pos);
 }
 
