@@ -4,10 +4,6 @@ int main()
 {
 	ClockInit();
 	
-	
-	
-	
-
 	while(1)
 	{
 	
