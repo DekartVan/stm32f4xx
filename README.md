@@ -1,2 +1,4 @@
 # stm32f4xx
-Examples of setting up and working with stm32f4xx peripherals
+
+"Лекции" в формате .md:
+1. [RCC](https://github.com/DekartVan/stm32f4xx/tree/main/CMSIS/RCC) 
