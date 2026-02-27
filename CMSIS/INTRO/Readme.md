@@ -22,10 +22,10 @@
 
 Первое, с чем нам придётся познакомиться - документация. Она как свод заповедей или уголовный кодекс - позволяет понять границы дозволенного и не наделать ошибок. Основными документами для работы с STM являются:
 
-* [Datasheet](Ссылка)
-* [Reference manual](Ссылка)
-* [Programming Manual](Ссылка)
-* [Errata Sheet](Ссылка)
+* [Datasheet](Datasheet STM32F411.pdf)
+* [Reference manual](Reference manual STM32F411.pdf)
+* [Programming Manual](Programming manual STM32F411.pdf)
+* [Errata Sheet](https://github.com/DekartVan/stm32f4xx/blob/main/Errata%20Sheet%20STM32F411.pdf)
 
 ### Datasheet
 
